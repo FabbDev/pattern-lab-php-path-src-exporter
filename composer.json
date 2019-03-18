@@ -1,0 +1,34 @@
+{
+    "name": "fabb-dev/pattern-lab-path-src-exporter",
+    "description": "Exports the patternPathSrc data variable to a file.",
+    "type": "patternlab-plugin",
+    "authors": [
+        {
+            "name": "Andy Fowlston",
+            "email": "andy@fabbdev.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "FabbDev\\PatternLab\\PathSrcExporter": "src/"
+        }
+    },
+    "require": {
+        "ext-json": "*",
+        "pattern-lab/core": "^2.9"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "patternlab": {
+            "config": {
+                "plugins": {
+                    "pathSrcExporter": {
+                        "enabled": true
+                    }
+                }
+            }
+        }
+    }
+}
